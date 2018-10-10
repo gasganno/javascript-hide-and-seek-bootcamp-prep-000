@@ -16,9 +16,8 @@ function increaseRankBy(n) {
 function deepestChild() {
   var current = document.querySelectorAll("#grand-node");
   var deepest = [];
-  function find() {
   while (current) {
-    if (n > current.length) {
+    if (n => n > current.length) {
       return current.innerHTML
     }
      if (Array.isArray(current)) {
@@ -29,7 +28,6 @@ function deepestChild() {
     current = deepest.shift()
   }
    return null
-}
 }
 
 
